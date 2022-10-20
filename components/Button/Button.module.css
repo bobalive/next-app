@@ -1,0 +1,54 @@
+.button{
+	display: inline-block;
+
+
+	box-sizing: border-box;
+	width: 148px;
+	padding: 10px 0 ;
+
+	cursor:pointer;
+    
+	transition: all 0.2s;
+	text-align: center;
+
+	border: none;
+	border-radius: 5px;
+
+	font-size: 14px;
+
+}
+
+.primary{
+	color: var(--white);
+	background: var(--primary);
+}
+.primary:hover{
+	background: var(--primary-hover);
+}
+.primary svg{
+	fill:var(--white);
+}
+
+
+.ghoast{
+	color: var(--black);
+	border: solid 1px var(--gray-light);
+	background: none;
+}
+.ghoast:hover{
+	color: var(--white);
+	background: var(--primary);
+}
+
+
+.arrow{
+	display: inline-block;
+
+	margin-left: 10px;
+    
+	transition: all 0.2s;
+}
+
+.down{
+	transform: rotate(90deg);
+}

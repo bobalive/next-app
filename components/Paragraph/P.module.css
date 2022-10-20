@@ -1,0 +1,14 @@
+.paragraph{
+	color: #3B434E;
+	
+	line-height: 24px;
+}
+.small{
+	font-size: 14px;
+}
+.medium{
+	font-size: 16px;
+}
+.big{
+	font-size: 18px;
+}

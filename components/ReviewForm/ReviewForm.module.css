@@ -1,0 +1,104 @@
+.reviewForm{
+	display: grid;
+
+	font-size: 14px;
+	line-height: 24px;
+
+	grid-template-columns:[start] auto 1fr auto [end]  ;
+	grid-row: auto auto auto;
+	gap: 20px 30px;
+
+}
+.textArea{
+	grid-column: start/end;
+	grid-row: 2;
+	height: 76px;
+}
+.textArea textarea{
+	margin: 0;
+}
+.inputBox{
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 0 20px;
+}
+.rating{
+	display: flex;
+	gap: 20px;
+}
+.submit{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 13px;
+}
+
+.panel {
+	position: relative;
+
+	margin-top: 20px;
+	padding: 20px;
+
+	border-radius: 5px;
+}
+.success{
+	background: var(--green-light);
+}
+.error{
+	background: var(--red-light);
+}
+
+.error .close{
+	fill: var(--red-light);
+}
+.close{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+
+	cursor: pointer;
+}
+.succesTitle{
+	font-weight: bold;
+}
+
+.input{
+	padding: 7px 15px;
+
+	color: var(--black);
+
+	border: none;
+	border-radius: 5px;
+	outline-color: var(--primary);
+
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+
+	font-family: var(--font-family);
+
+	font-size: 16px;
+	line-height: 22px;
+
+}
+
+.input ::placeholder{
+	color: var(--gray);
+}
+
+.input ::placeholder{
+	color: var(--gray);
+}
+@media screen and (max-width:1200px) {
+	.reviewForm{
+		grid-template-columns: 1fr 1fr;
+	}
+	.rating, .inputBox{
+		grid-column: span 2;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.inputBox{
+		grid-template-columns: 1fr;
+		gap: 20px 0;
+	}
+}
+
